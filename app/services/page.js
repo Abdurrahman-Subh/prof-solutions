@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Shield,
   Thermometer,
@@ -9,25 +10,64 @@ import {
 
 export default function Services() {
   const services = [
-    { name: "Dakisolatie", icon: Shield },
-    { name: "Muurisolatie", icon: Thermometer },
-    { name: "Vloerisolatie", icon: Home },
-    { name: "Glasisolatie", icon: Droplet },
-    { name: "Spouwmuurisolatie", icon: Zap },
-    { name: "Energieadvies", icon: BarChart },
+    {
+      name: "Dakisolatie",
+      icon: Shield,
+      image: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+    },
+    {
+      name: "Muurisolatie",
+      icon: Thermometer,
+      image: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+    },
+    {
+      name: "Vloerisolatie",
+      icon: Home,
+      image: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+    },
+    {
+      name: "Glasisolatie",
+      icon: Droplet,
+      image: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+    },
+    {
+      name: "Spouwmuurisolatie",
+      icon: Zap,
+      image: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+    },
+    {
+      name: "Energieadvies",
+      icon: BarChart,
+      image: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+    },
   ];
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+      <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-[#303642]">
         Onze Diensten
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
-          <div key={index} className="bg-[#00a79d] p-6 rounded-lg">
-            <service.icon className="mb-4" size={32} />
-            <h2 className="text-2xl font-semibold mb-4">{service.name}</h2>
-            <p>
+          <div
+            key={index}
+            className="bg-[#00a79d] p-6 rounded-lg shadow-lg overflow-hidden"
+          >
+            <div className="flex items-center mb-4">
+              <service.icon className="mr-2 text-[#303642]" size={32} />
+              <h2 className="text-2xl font-semibold text-[#303642]">
+                {service.name}
+              </h2>
+            </div>
+            <div className="relative h-48 mb-4 rounded-md overflow-hidden">
+              <Image
+                src={service.image}
+                alt={service.name}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <p className="text-[#303642]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>

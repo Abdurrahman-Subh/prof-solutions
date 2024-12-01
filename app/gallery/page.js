@@ -170,18 +170,18 @@ export default function Gallery() {
 
         {/* Right content area */}
         <div className="space-y-8">
-          <div className="bg-white rounded-lg p-6 shadow-sm">
-            <h2 className="text-xl font-bold mb-4 text-black">
+          <div className="rounded-lg p-6 shadow-sm">
+            <h2 className="text-xl font-bold mb-4 text-white">
               {activeContent.title}
             </h2>
-            <p className="text-sm text-gray-600 mb-6">
+            <p className="text-sm text-white mb-6">
               {activeContent.description}
             </p>
 
-            <h3 className="text-lg font-semibold mb-3 text-black">Voordelen</h3>
+            <h3 className="text-lg font-semibold mb-3 text-white">Voordelen</h3>
             <ul className="list-disc list-inside space-y-2 mb-6">
               {activeContent.benefits.map((benefit, index) => (
-                <li key={index} className="text-sm text-gray-600">
+                <li key={index} className="text-sm text-white">
                   {benefit}
                 </li>
               ))}
@@ -200,10 +200,10 @@ export default function Gallery() {
                     />
                   </CardContent>
                   <CardHeader className="p-4">
-                    <CardTitle className="text-sm font-semibold">
+                    <CardTitle className="text-sm font-semibold text-white">
                       {image.title}
                     </CardTitle>
-                    <CardDescription className="text-xs">
+                    <CardDescription className="text-xs text-white">
                       {image.description}
                     </CardDescription>
                   </CardHeader>
