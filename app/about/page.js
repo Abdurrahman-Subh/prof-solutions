@@ -41,33 +41,13 @@ export default function About() {
       <div className="mt-8">
         <h2 className="text-xl font-semibold mb-4">Onze Locaties</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          
+          
           <div className="bg-[#00a79d] p-4 rounded-lg">
-            <h3 className="text-lg font-semibold mb-2">Amsterdam</h3>
+            <h3 className="text-lg font-semibold mb-2">Muiderberg</h3>
             <p className="text-sm flex items-center">
               <MapPin size={16} className="mr-2" />
-              Prinsengracht 123, 1015 Amsterdam
-            </p>
-            <p className="text-sm flex items-center">
-              <Phone size={16} className="mr-2" />
-              +31 20 123 4567
-            </p>
-          </div>
-          <div className="bg-[#00a79d] p-4 rounded-lg">
-            <h3 className="text-lg font-semibold mb-2">Rotterdam</h3>
-            <p className="text-sm flex items-center">
-              <MapPin size={16} className="mr-2" />
-              Coolsingel 456, 3011 Rotterdam
-            </p>
-            <p className="text-sm flex items-center">
-              <Phone size={16} className="mr-2" />
-              +31 10 987 6543
-            </p>
-          </div>
-          <div className="bg-[#00a79d] p-4 rounded-lg">
-            <h3 className="text-lg font-semibold mb-2">Utrecht</h3>
-            <p className="text-sm flex items-center">
-              <MapPin size={16} className="mr-2" />
-              Oudegracht 789, 3511 Utrecht
+              Waterhoen 5, 1399KG Muiderberg
             </p>
             <p className="text-sm flex items-center">
               <Phone size={16} className="mr-2" />

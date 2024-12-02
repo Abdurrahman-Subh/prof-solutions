@@ -2,6 +2,22 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Spow from "@/public/spow.jpeg";
+import Spow1 from "@/public/spow1.jpg";
+import Spow2 from "@/public/spow2.jpeg";
+import Spow3 from "@/public/spow3.webp";
+import Daki from "@/public/3.jpeg";
+import Daki1 from "@/public/7.jpeg";
+import Daki2 from "@/public/6.jpeg";
+import Daki5 from "@/public/daki5.jpg";
+import Bodem from "@/public/bodem.jpeg";
+import Bodem1 from "@/public/bodem1.jpg";
+import Bodem2 from "@/public/bodem2.jpg";
+import Bodem3 from "@/public/bodem3.jpg"; 
+import Vlor3 from "@/public/vlor3.jpeg";
+import Vlor1 from "@/public/vlor1.jpeg";
+import Vlor2 from "@/public/vlor2.jpeg";
+import Vlor4 from "@/public/vlor4.jpeg";
 import {
   Card,
   CardContent,
@@ -26,22 +42,22 @@ export default function Gallery() {
       ],
       images: [
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Vlor3,
           title: "Vloerisolatie Installatie",
           description: "Professionele installatie van vloerisolatie",
         },
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Vlor1,
           title: "Thermische Barrière",
           description: "Effectieve thermische isolatie voor uw vloer",
         },
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Vlor2,
           title: "Comfort Verbetering",
           description: "Verhoogd comfort door betere isolatie",
         },
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Vlor4,
           title: "Energiebesparing",
           description: "Meetbare energiebesparing na installatie",
         },
@@ -58,22 +74,22 @@ export default function Gallery() {
       ],
       images: [
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Bodem,
           title: "Bodem Voorbereiding",
           description: "Professionele voorbereiding van de bodem",
         },
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Bodem1,
           title: "Isolatiemateriaal",
           description: "Hoogwaardige isolatiematerialen",
         },
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Bodem2,
           title: "Installatie Proces",
           description: "Vakkundige installatie door experts",
         },
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Bodem3,
           title: "Eindresultaat",
           description: "Perfect geïsoleerde bodem",
         },
@@ -90,22 +106,22 @@ export default function Gallery() {
       ],
       images: [
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Spow,
           title: "Spouwmuur Inspectie",
           description: "Grondige inspectie van de spouwmuur",
         },
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Spow1,
           title: "Isolatie Inblazen",
           description: "Professioneel inblazen van isolatiemateriaal",
         },
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Spow3,
           title: "Kwaliteitscontrole",
           description: "Nauwkeurige controle van de isolatie",
         },
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Spow2,
           title: "Afwerking",
           description: "Nette afwerking van de werkzaamheden",
         },
@@ -122,22 +138,22 @@ export default function Gallery() {
       ],
       images: [
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Daki,
           title: "Dak Voorbereiding",
           description: "Zorgvuldige voorbereiding van het dak",
         },
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Daki5,
           title: "Isolatie Aanbrengen",
           description: "Vakkundige installatie van dakisolatie",
         },
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Daki2,
           title: "Dampscherm",
           description: "Plaatsing van het dampscherm",
         },
         {
-          src: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+          src: Daki1,
           title: "Eindafwerking",
           description: "Professionele afwerking van de dakisolatie",
         },

@@ -6,7 +6,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 export const metadata = {
   metadataBase: new URL("https://www.prof-solutions.nl"),
   title: {
-    default: "Prof-Solutions | Innovatieve Isolatieoplossingen",
+    default: "Prof-Solutions |Innovatieve isolatieoplossingen voor uw woning",
   },
   description:
     "Prof-Solutions biedt hoogwaardige isolatiediensten voor uw woning. Ontdek onze innovatieve oplossingen voor dak-, muur-, vloer- en glasisolatie.",
@@ -16,9 +16,14 @@ export const metadata = {
     "dakisolatie",
     "muurisolatie",
     "vloerisolatie",
-    "glasisolatie",
+    "Dakisolatie",
     "duurzaam wonen",
     "Nederland",
+    "Prof-Solutions",
+    "Spouwisolatie",
+    "Bodemisolatie",
+    "Vloerisolatie",
+    
   ],
   authors: [{ name: "Prof-Solutions" }],
   creator: "Prof-Solutions",
@@ -29,7 +34,7 @@ export const metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Prof-Solutions | Innovatieve Isolatieoplossingen",
+    title: "Prof-Solutions | Innovatieve isolatieoplossingen voor uw woning",
     description:
       "Ontdek hoe Prof-Solutions uw woning comfortabeler en energiezuiniger kan maken met onze geavanceerde isolatietechnieken.",
     url: "https://www.prof-solutions.nl",
@@ -39,7 +44,7 @@ export const metadata = {
         url: "https://www.prof-solutions.nl/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Prof-Solutions - Innovatieve Isolatieoplossingen",
+        alt: "Prof-Solutions - Innovatieve isolatieoplossingen voor uw woning",
       },
     ],
     locale: "nl_NL",
@@ -47,7 +52,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prof-Solutions | Innovatieve Isolatieoplossingen",
+    title: "Prof-Solutions | Innovatieve isolatieoplossingen voor uw woning",
     description:
       "Verbeter de energie-efficiëntie van uw woning met de geavanceerde isolatietechnieken van Prof-Solutions.",
     images: ["https://www.prof-solutions.nl/twitter-image.jpg"],

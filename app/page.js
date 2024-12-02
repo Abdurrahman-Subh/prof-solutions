@@ -1,6 +1,16 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Prof from "@/public/prof.png";
+import Logo from "@/public/vlor1.jpeg";
+import Spow from "@/public/spow.jpeg";
+import Spow1 from "@/public/spow1.jpg";
+import Daki from "@/public/3.jpeg";
+import Daki1 from "@/public/7.jpeg";
+import Bodem from "@/public/bodem.jpeg";
+import Bodem1 from "@/public/bodem1.jpg";
+import Vlor from "@/public/vlor1.jpeg";
+import Vlor3 from "@/public/vlor3.jpeg";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { motion, useAnimation, useInView } from "framer-motion";
@@ -46,24 +56,30 @@ export default function Home() {
     {
       title: "Dakisolatie",
       description:
-        "Verminder warmteverlies en bespaar op energiekosten met onze geavanceerde dakisolatietechnieken.",
+        "Warmte stijgt, en zonder goede dakisolatie gaat veel van deze warmte verloren. Onze dakisolatieoplossingen zijn ontworpen om dit warmteverlies te minimaliseren, wat zorgt voor een aanzienlijke besparing op uw energierekening. Of u nu kiest voor isolatie aan de binnenkant of de buitenkant van uw dak, wij zorgen voor een oplossing die past bij uw behoeften en budget.",
+      img: Daki,
     },
     {
-      title: "Muurisolatie",
+      title: "Spouwisolatie",
       description:
-        "Verbeter de thermische prestaties van uw woning met onze effectieve muurisolatieoplossingen.",
+        "Spouwisolatie is een van de meest kosteneffectieve manieren om de energie-efficiëntie van uw huis te verhogen. Door de ruimte tussen de binnen- en buitenmuur van uw huis te vullen, vermindert spouwisolatie warmteverlies aanzienlijk. Dit resulteert in lagere stookkosten en een comfortabeler leefklimaat, het hele jaar door.",
+      img: Spow,
     },
     {
       title: "Vloerisolatie",
       description:
-        "Zorg voor een comfortabeler leefklimaat en lagere energierekeningen met onze vloerisolatiediensten.",
+        "Vloerisolatie is een effectieve manier om uw huis warmer en energiezuiniger te maken. Door de onderkant van uw vloeren te isoleren, vermindert u warmteverlies, wat leidt tot lagere energiekosten en een verhoogd comfort. Onze vloerisolatieoplossingen zijn ontworpen om koude trek en vochtproblemen aan te pakken, wat resulteert in een gezonder binnenklimaat voor uw gezin.",
+      img: Logo,
     },
     {
-      title: "Glasisolatie",
+      title: "Bodemisolatie",
       description:
-        "Upgrade uw ramen voor betere isolatie en geluidswering met onze moderne glasisolatietechnieken.",
+        "Bodemisolatie biedt een snelle en efficiënte oplossing om de isolatie van uw woning te verbeteren, met name in kruipruimtes waar vocht en kou vaak een probleem vormen. Deze methode helpt niet alleen bij het verminderen van energieverbruik maar verbetert ook de luchtkwaliteit binnenshuis door vocht en schimmelvorming tegen te gaan.",
+      img: Bodem,
     },
   ];
+
+  const gallery = [Vlor,Vlor3, Daki,Daki1, Spow, Spow1, Bodem , Bodem1];
 
   return (
     <div>
@@ -92,7 +108,7 @@ export default function Home() {
               </div>
               <div className="mt-4 md:mt-0">
                 <Image
-                  src="https://media.stockimg.ai/image/nwex4DuCeRiQ.png"
+                  src={Prof}
                   alt="Prof-Solutions team"
                   width={500}
                   height={300}
@@ -127,7 +143,7 @@ export default function Home() {
                   </div>
                   <div className="w-full md:w-1/2">
                     <Image
-                      src="https://media.stockimg.ai/image/nwex4DuCeRiQ.png"
+                      src={service.img}
                       alt={service.title}
                       width={300}
                       height={200}
@@ -153,7 +169,7 @@ export default function Home() {
               className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-5xl mx-auto"
             >
               <CarouselContent className="-ml-2 md:-ml-4">
-                {[...Array(8)].map((_, index) => (
+                {gallery.map((img, index) => (
                   <CarouselItem
                     key={index}
                     className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/4"
@@ -161,7 +177,7 @@ export default function Home() {
                     <Card>
                       <CardContent className="flex aspect-square items-center justify-center p-2">
                         <Image
-                          src="https://media.stockimg.ai/image/nwex4DuCeRiQ.png"
+                          src={img}
                           alt={`Project ${index + 1}`}
                           width={400}
                           height={400}

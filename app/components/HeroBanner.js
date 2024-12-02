@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Hero from "@/public/banner.webp";
 import { ArrowRight } from "lucide-react";
 
 export default function HeroBanner() {
   return (
     <div className="relative h-[80vh] min-h-[400px] w-full overflow-hidden">
       <Image
-        src="https://media.stockimg.ai/image/nwex4DuCeRiQ.png"
+        src={Hero}
         alt="Prof-Solutions Hero Image"
         layout="fill"
         objectFit="cover"
@@ -22,7 +23,7 @@ export default function HeroBanner() {
           wooncomfort.
         </p>
         <button className="bg-[#00a79d] text-white px-6 py-2 rounded text-sm flex items-center hover:bg-[#008c82] transition duration-300">
-          Vraag een offerte aan
+           Vraag een offerte aan
           <ArrowRight className="ml-2" size={16} />
         </button>
       </div>

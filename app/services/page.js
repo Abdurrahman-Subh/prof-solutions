@@ -1,4 +1,12 @@
 import Image from "next/image";
+import Spow from "@/public/spow.jpeg";
+import Spow1 from "@/public/spow1.jpg";
+import Daki from "@/public/3.jpeg";
+import Daki1 from "@/public/7.jpeg";
+import Bodem from "@/public/bodem.jpeg";
+import Bodem1 from "@/public/bodem1.jpg";
+import Vlor from "@/public/vlor1.jpeg";
+import Vlor3 from "@/public/vlor3.jpeg";
 import {
   Shield,
   Thermometer,
@@ -13,38 +21,30 @@ export default function Services() {
     {
       name: "Dakisolatie",
       icon: Shield,
-      image: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+      image: Daki ,
     },
     {
-      name: "Muurisolatie",
+      name: "bodemisolatie",
       icon: Thermometer,
-      image: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+      image: Bodem,
     },
     {
       name: "Vloerisolatie",
       icon: Home,
-      image: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+      image: Vlor,
     },
+    
     {
-      name: "Glasisolatie",
-      icon: Droplet,
-      image: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
-    },
-    {
-      name: "Spouwmuurisolatie",
+      name: "spouwisolatie",
       icon: Zap,
-      image: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
+      image: Spow,
     },
-    {
-      name: "Energieadvies",
-      icon: BarChart,
-      image: "https://media.stockimg.ai/image/nwex4DuCeRiQ.png",
-    },
+    
   ];
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-[#303642]">
+      <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">
         Onze Diensten
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -54,8 +54,8 @@ export default function Services() {
             className="bg-[#00a79d] p-6 rounded-lg shadow-lg overflow-hidden"
           >
             <div className="flex items-center mb-4">
-              <service.icon className="mr-2 text-[#303642]" size={32} />
-              <h2 className="text-2xl font-semibold text-[#303642]">
+              <service.icon className="mr-2 text-white" size={32} />
+              <h2 className="text-2xl font-semibold text-white">
                 {service.name}
               </h2>
             </div>
@@ -67,7 +67,7 @@ export default function Services() {
                 objectFit="cover"
               />
             </div>
-            <p className="text-[#303642]">
+            <p className="text-white">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>

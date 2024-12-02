@@ -140,22 +140,9 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">
-              © {currentYear} Prof-Solutions. Alle rechten voorbehouden.
+              © {currentYear} Prof-Solutions &  Maged Sakkar . Alle rechten voorbehouden.
             </p>
-            <div className="mt-4 md:mt-0">
-              <Link
-                href="/privacy"
-                className="text-sm text-gray-400 hover:text-[#00a79d] transition-colors mr-4"
-              >
-                Privacybeleid
-              </Link>
-              <Link
-                href="/terms"
-                className="text-sm text-gray-400 hover:text-[#00a79d] transition-colors"
-              >
-                Algemene voorwaarden
-              </Link>
-            </div>
+            
           </div>
         </div>
       </div>

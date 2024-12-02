@@ -12,7 +12,8 @@ export default function Contact() {
           <h2 className="text-xl font-semibold mb-4">Hoofdkantoor</h2>
           <p className="text-sm flex items-center mb-2">
             <MapPin size={16} className="mr-2" />
-            198 West 21st Street, 1234 AB Amsterdam, NETHERLANDS
+            Waterhoen 5, 1399KG Muiderberg
+
           </p>
           <p className="text-sm flex items-center mb-2">
             <Phone size={16} className="mr-2" />
@@ -37,11 +38,9 @@ export default function Contact() {
               <strong>Maandag - Vrijdag:</strong> 9:00 - 17:00
             </li>
             <li>
-              <strong>Zaterdag:</strong> 10:00 - 14:00
+              <strong>Zaterdag - Zondag:</strong> Gesloten
             </li>
-            <li>
-              <strong>Zondag:</strong> Gesloten
-            </li>
+            
           </ul>
         </div>
       </div>
