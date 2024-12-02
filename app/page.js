@@ -22,6 +22,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import HeroBanner from "./components/HeroBanner";
+import Link from "next/link";
 
 const AnimatedSection = ({ children }) => {
   const controls = useAnimation();
@@ -96,14 +97,13 @@ export default function Home() {
                   onze jarenlange ervaring en geavanceerde technieken zorgen we
                   voor optimale isolatie en een duurzame toekomst.
                 </p>
-                <motion.button
-                  className="bg-[#00a79d] text-white px-4 py-2 rounded text-sm flex items-center hover:bg-[#008c82]"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                <Link
+                  href={"/services"}
+                  className="bg-[#00a79d] text-white px-4 py-2 rounded text-sm flex items-center hover:bg-[#008c82] w-fit"
                 >
-                  Ontdek onze diensten
+                  Diensten
                   <ArrowRight className="ml-2" size={16} />
-                </motion.button>
+                </Link>
               </div>
               <div className="mt-4 md:mt-0">
                 <Image

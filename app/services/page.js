@@ -21,7 +21,7 @@ export default function Services() {
     {
       name: "Dakisolatie",
       icon: Shield,
-      image: Daki ,
+      image: Daki,
     },
     {
       name: "bodemisolatie",
@@ -33,17 +33,16 @@ export default function Services() {
       icon: Home,
       image: Vlor,
     },
-    
+
     {
       name: "spouwisolatie",
       icon: Zap,
       image: Spow,
     },
-    
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-8">
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">
         Onze Diensten
       </h1>

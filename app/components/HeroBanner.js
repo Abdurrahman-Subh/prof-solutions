@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Hero from "@/public/banner.webp";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function HeroBanner() {
   return (
@@ -22,10 +23,13 @@ export default function HeroBanner() {
           isolatietechnieken. Bespaar op energiekosten en verhoog uw
           wooncomfort.
         </p>
-        <button className="bg-[#00a79d] text-white px-6 py-2 rounded text-sm flex items-center hover:bg-[#008c82] transition duration-300">
-           Vraag een offerte aan
+        <Link
+          href={"/contact"}
+          className="bg-[#00a79d] text-white px-6 py-2 rounded text-sm flex items-center hover:bg-[#008c82] transition duration-300"
+        >
+          Neem Nu Contact Met Ons Op
           <ArrowRight className="ml-2" size={16} />
-        </button>
+        </Link>
       </div>
     </div>
   );
