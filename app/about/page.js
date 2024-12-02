@@ -41,8 +41,6 @@ export default function About() {
       <div className="mt-8">
         <h2 className="text-xl font-semibold mb-4">Onze Locaties</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          
-          
           <div className="bg-[#00a79d] p-4 rounded-lg">
             <h3 className="text-lg font-semibold mb-2">Muiderberg</h3>
             <p className="text-sm flex items-center">
@@ -51,7 +49,7 @@ export default function About() {
             </p>
             <p className="text-sm flex items-center">
               <Phone size={16} className="mr-2" />
-              +31 30 456 7890
+              +31 6 48444885
             </p>
           </div>
         </div>

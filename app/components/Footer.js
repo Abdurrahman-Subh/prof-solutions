@@ -73,7 +73,7 @@ export default function Footer() {
               {[
                 "Dakisolatie",
                 "Vloerisolatie",
-                "Muurisolatie",
+                "Bodemisolatie",
                 "Spouwmuurisolatie",
               ].map((service) => (
                 <li key={service}>

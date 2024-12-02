@@ -24,7 +24,7 @@ export default function Services() {
       image: Daki,
     },
     {
-      name: "bodemisolatie",
+      name: "Bodemisolatie",
       icon: Thermometer,
       image: Bodem,
     },
@@ -35,7 +35,7 @@ export default function Services() {
     },
 
     {
-      name: "spouwisolatie",
+      name: "Spouwmuurisolatie ",
       icon: Zap,
       image: Spow,
     },

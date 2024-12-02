@@ -13,7 +13,7 @@ import Daki5 from "@/public/daki5.jpg";
 import Bodem from "@/public/bodem.jpeg";
 import Bodem1 from "@/public/bodem1.jpg";
 import Bodem2 from "@/public/bodem2.jpg";
-import Bodem3 from "@/public/bodem3.jpg"; 
+import Bodem3 from "@/public/bodem3.jpg";
 import Vlor3 from "@/public/vlor3.jpeg";
 import Vlor1 from "@/public/vlor1.jpeg";
 import Vlor2 from "@/public/vlor2.jpeg";
@@ -64,7 +64,7 @@ export default function Gallery() {
       ],
     },
     bodemisolatie: {
-      title: "Wat is bodemisolatie?",
+      title: "Wat is Bodemisolatie?",
       description:
         "Bodemisolatie is essentieel voor het creëren van een energiezuinige woning. Het isoleert de bodem onder uw huis, wat bijdraagt aan een comfortabeler leefklimaat.",
       benefits: [
