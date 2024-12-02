@@ -1,19 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import Prof from "@/public/prof.png";
-import Logo from "@/public/vlor1.jpeg";
-import Spow from "@/public/spow.jpeg";
-import Spow1 from "@/public/spow1.jpg";
-import Daki from "@/public/3.jpeg";
-import Daki1 from "@/public/7.jpeg";
-import Bodem from "@/public/bodem.jpeg";
-import Bodem1 from "@/public/bodem1.jpg";
-import Vlor from "@/public/vlor1.jpeg";
-import Vlor3 from "@/public/vlor3.jpeg";
-import Image from "next/image";
-import { ArrowRight } from "lucide-react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -21,7 +8,19 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import Daki from "@/public/3.jpeg";
+import Daki1 from "@/public/7.jpeg";
+import Bodem from "@/public/bodem.jpeg";
+import Bodem1 from "@/public/bodem1.jpg";
+import Prof from "@/public/prof.png";
+import Spow from "@/public/spow.jpeg";
+import Spow1 from "@/public/spow1.jpg";
+import { default as Logo, default as Vlor } from "@/public/vlor1.jpeg";
+import Vlor3 from "@/public/vlor3.jpeg";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { useEffect, useRef } from "react";
 import HeroBanner from "./components/HeroBanner";
 
 const AnimatedSection = ({ children }) => {

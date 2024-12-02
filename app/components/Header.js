@@ -10,8 +10,8 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navItems = [
-  { href: "/", label: "Home", icon: Home },
-  { href: "/gallery", label: "Gallery", icon: ImageIcon },
+  { href: "/", label: "Hoofdpagina", icon: Home },
+  { href: "/gallery", label: "Galerij", icon: ImageIcon },
   { href: "/services", label: "Diensten", icon: Briefcase },
   { href: "/about", label: "Over ons", icon: Users },
   { href: "/contact", label: "Contact", icon: Mail },

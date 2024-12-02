@@ -2,6 +2,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./globals.css";
 import WhatsAppButton from "./components/WhatsAppButton";
+import INSULA from "@/public/INSULA-1.webp";
+import PIFPRO from "@/public/PIFPRO-1-1024x328.webp";
+import LogoWeb from "@/public/vca-logo-web.webp";
+import Image from "next/image";
 
 export const metadata = {
   metadataBase: new URL("https://www.prof-solutions.nl"),
@@ -23,7 +27,6 @@ export const metadata = {
     "Spouwisolatie",
     "Bodemisolatie",
     "Vloerisolatie",
-    
   ],
   authors: [{ name: "Prof-Solutions" }],
   creator: "Prof-Solutions",
@@ -78,6 +81,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const logos = [INSULA, PIFPRO, LogoWeb];
+
   return (
     <html lang="nl">
       <body
@@ -85,7 +90,23 @@ export default function RootLayout({ children }) {
         style={{ backgroundColor: "#303642", color: "white" }}
       >
         <Header />
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow">
+          {children}
+
+          <div className="grid grid-cols-3 gap-4 bg-white p-10 rounded-b-none rounded-t-lg">
+            {logos.map((logo, index) => (
+              <div key={index} className="flex items-center justify-center">
+                <Image
+                  src={logo}
+                  alt={`Logo ${index + 1}`}
+                  width={150}
+                  height={150}
+                  className="rounded-lg w-full h-auto max-w-[282px]"
+                />
+              </div>
+            ))}
+          </div>
+        </main>
         <WhatsAppButton />
         <Footer />
       </body>

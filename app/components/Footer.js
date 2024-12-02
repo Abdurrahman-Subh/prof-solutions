@@ -1,17 +1,15 @@
-import Link from "next/link";
-import Image from "next/image";
 import {
-  Home,
-  Users,
   Briefcase,
+  Home,
   ImageIcon,
-  Phone,
-  MapPin,
-  Mail,
-  Facebook,
-  Twitter,
   LinkedinIcon as LinkedIn,
+  Mail,
+  MapPin,
+  Phone,
+  Users,
 } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -36,24 +34,14 @@ export default function Footer() {
               comfort en energiebesparing.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-gray-300 hover:text-[#00a79d] transition-colors"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-300 hover:text-[#00a79d] transition-colors"
-              >
-                <Twitter size={20} />
-              </a>
-              <a
-                href="#"
+              <Link
+                href="https://tr.linkedin.com/in/maged-sakkar-532088204"
+                rel="noopener noreferrer"
+                target="_blank"
                 className="text-gray-300 hover:text-[#00a79d] transition-colors"
               >
                 <LinkedIn size={20} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -61,7 +49,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Snelle Links</h3>
             <ul className="space-y-2">
               {[
-                { href: "/", label: "Home", icon: Home },
+                { href: "/", label: "Hoofdpagina", icon: Home },
                 { href: "/about", label: "Over Ons", icon: Users },
                 { href: "/services", label: "Diensten", icon: Briefcase },
                 { href: "/gallery", label: "Galerij", icon: ImageIcon },
