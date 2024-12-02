@@ -75,6 +75,7 @@ export default function Footer() {
                 "Vloerisolatie",
                 "Bodemisolatie",
                 "Spouwmuurisolatie",
+                "Ventilatieroosters",
               ].map((service) => (
                 <li key={service}>
                   <Link
