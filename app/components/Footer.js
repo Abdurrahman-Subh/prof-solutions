@@ -17,7 +17,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#303642] text-white py-12">
+    <footer className="  border-t border-[#00a79d] bg-[#303642] text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -140,9 +140,9 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">
-              © {currentYear} Prof-Solutions &  Maged Sakkar . Alle rechten voorbehouden.
+              © {currentYear} Prof-Solutions & Maged Sakkar . Alle rechten
+              voorbehouden.
             </p>
-            
           </div>
         </div>
       </div>

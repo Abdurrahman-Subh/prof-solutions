@@ -79,12 +79,12 @@ export default function Home() {
     },
   ];
 
-  const gallery = [Vlor,Vlor3, Daki,Daki1, Spow, Spow1, Bodem , Bodem1];
+  const gallery = [Vlor, Vlor3, Daki, Daki1, Spow, Spow1, Bodem, Bodem1];
 
   return (
     <div>
       <HeroBanner />
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 space-y-40">
         <AnimatedSection>
           <section className="mb-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -111,8 +111,8 @@ export default function Home() {
                   src={Prof}
                   alt="Prof-Solutions team"
                   width={500}
-                  height={300}
-                  className="rounded-lg w-full h-auto"
+                  height={500}
+                  className="rounded-lg w-full h-auto max-w-[400px] mx-auto"
                 />
               </div>
             </div>
