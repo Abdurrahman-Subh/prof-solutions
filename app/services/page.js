@@ -7,6 +7,8 @@ import Bodem from "@/public/bodem.jpeg";
 import Bodem1 from "@/public/bodem1.jpg";
 import Vlor from "@/public/vlor1.jpeg";
 import Vlor3 from "@/public/vlor3.jpeg";
+import Vent from "@/public/vent.jpg";
+
 import {
   Shield,
   Thermometer,
@@ -39,6 +41,12 @@ export default function Services() {
       icon: Zap,
       image: Spow,
     },
+
+    {
+      name: "Ventilatieroosters ",
+      icon: BarChart,
+      image: Vent,
+    },
   ];
 
   return (
@@ -46,7 +54,7 @@ export default function Services() {
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">
         Onze Diensten
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {services.map((service, index) => (
           <div
             key={index}
@@ -66,10 +74,6 @@ export default function Services() {
                 objectFit="cover"
               />
             </div>
-            <p className="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
           </div>
         ))}
       </div>

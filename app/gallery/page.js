@@ -4,10 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 import Spow from "@/public/spow.jpeg";
 import Spow1 from "@/public/spow1.jpg";
-import Spow2 from "@/public/spow2.jpeg";
-import Spow3 from "@/public/spow3.webp";
+import Spow2 from "@/public/qutaiba.jpg";
+import Spow3 from "@/public/spoww.jpg";
 import Daki from "@/public/3.jpeg";
-import Daki1 from "@/public/7.jpeg";
+import Daki1 from "@/public/dakiupdate.jpg";
 import Daki2 from "@/public/6.jpeg";
 import Daki5 from "@/public/daki5.jpg";
 import Bodem from "@/public/bodem.jpeg";
@@ -16,8 +16,8 @@ import Bodem2 from "@/public/bodem2.jpg";
 import Bodem3 from "@/public/bodem3.jpg";
 import Vlor3 from "@/public/vlor3.jpeg";
 import Vlor1 from "@/public/vlor1.jpeg";
-import Vlor2 from "@/public/vlor2.jpeg";
-import Vlor4 from "@/public/vlor4.jpeg";
+import Vlor2 from "@/public/update2.jpg";
+import Vlor4 from "@/public/update1.jpg";
 import {
   Card,
   CardContent,
@@ -96,7 +96,7 @@ export default function Gallery() {
       ],
     },
     spouwisolatie: {
-      title: "Wat is spouwisolatie?",
+      title: "Wat is Spouwmuurisolatie ?",
       description:
         "Spouwisolatie is een effectieve methode om uw muren te isoleren. Het materiaal wordt in de spouwmuur geblazen, wat resulteert in uitstekende isolatie.",
       benefits: [
@@ -128,7 +128,7 @@ export default function Gallery() {
       ],
     },
     dakisolatie: {
-      title: "Wat is dakisolatie?",
+      title: "Wat is Dakisolatie?",
       description:
         "Dakisolatie is cruciaal voor een energiezuinig huis. Het voorkomt warmteverlies via het dak en zorgt voor een aangenaam binnenklimaat.",
       benefits: [
