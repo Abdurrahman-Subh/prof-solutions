@@ -97,7 +97,7 @@ export default function Footer() {
                   className="mr-2 mt-1 flex-shrink-0 text-[#00a79d]"
                 />
                 <span className="text-gray-300">
-                  198 West 21st Street, 1234 AB Amsterdam, NETHERLANDS
+                  Waterhoen 5 1399KG Muiderberg
                 </span>
               </li>
               <li className="flex items-center">
