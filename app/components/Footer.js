@@ -72,9 +72,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 "Dakisolatie",
+                "Spouwmuurisolatie",
                 "Vloerisolatie",
                 "Bodemisolatie",
-                "Spouwmuurisolatie",
                 "Ventilatieroosters",
               ].map((service) => (
                 <li key={service}>
