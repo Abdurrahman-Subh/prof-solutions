@@ -95,7 +95,7 @@ export default function Gallery() {
         },
       ],
     },
-    spouwisolatie: {
+    Spouwmuurisolatie: {
       title: "Wat is Spouwmuurisolatie ?",
       description:
         "Spouwisolatie is een effectieve methode om uw muren te isoleren. Het materiaal wordt in de spouwmuur geblazen, wat resulteert in uitstekende isolatie.",
@@ -159,7 +159,26 @@ export default function Gallery() {
         },
       ],
     },
+    Ventilatieroosters: {
+      title: "Wat is Ventilatieroosters?",
+      description:
+        "Dakisolatie is cruciaal voor een energiezuinig huis. Het voorkomt warmteverlies via het dak en zorgt voor een aangenaam binnenklimaat.",
+      benefits: [
+        "Maximale energiebesparing",
+        "Bescherming tegen weersinvloeden",
+        "Verbeterd binnenklimaat",
+      ],
+      images: [
+        {
+          src: Daki,
+          title: "Dak Voorbereiding",
+          description: "Zorgvuldige voorbereiding van het dak",
+        },
+      ],
+    },
   };
+
+
 
   const activeContent = sections[activeSection];
 

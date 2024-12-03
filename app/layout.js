@@ -5,6 +5,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import INSULA from "@/public/INSULA-1.webp";
 import PIFPRO from "@/public/PIFPRO-1-1024x328.webp";
 import LogoWeb from "@/public/vca-logo-web.webp";
+import Logo1 from "@/public/logo2.jpg";
 import Image from "next/image";
 
 export const metadata = {
@@ -81,7 +82,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const logos = [INSULA, PIFPRO, LogoWeb];
+  const logos = [INSULA, PIFPRO, LogoWeb, Logo1];
 
   return (
     <html lang="nl">
@@ -93,7 +94,7 @@ export default function RootLayout({ children }) {
         <main className="flex-grow">
           {children}
 
-          <div className="grid grid-cols-3 gap-4 bg-white p-10 rounded-b-none rounded-t-lg">
+          <div className="grid grid-cols-4 gap-10 bg-white p-1 rounded-b-none rounded-t-lg">
             {logos.map((logo, index) => (
               <div key={index} className="flex items-center justify-center">
                 <Image
