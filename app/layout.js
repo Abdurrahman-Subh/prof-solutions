@@ -5,7 +5,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import INSULA from "@/public/INSULA-1.webp";
 import PIFPRO from "@/public/PIFPRO-1-1024x328.webp";
 import LogoWeb from "@/public/vca-logo-web.webp";
-import Logo1 from "@/public/logo2.jpg";
+import Logo2 from "@/public/logo2.jpg";
 import Image from "next/image";
 
 export const metadata = {
@@ -82,7 +82,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const logos = [INSULA, PIFPRO, LogoWeb, Logo1];
+  const logos = [INSULA, PIFPRO, LogoWeb, Logo2];
 
   return (
     <html lang="nl">
