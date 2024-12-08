@@ -18,6 +18,7 @@ import Vlor3 from "@/public/vlor3.jpeg";
 import Vlor1 from "@/public/vlor1.jpeg";
 import Vlor2 from "@/public/update2.jpg";
 import Vlor4 from "@/public/update1.jpg";
+import Vent1 from "@/public/vent.jpg";
 import {
   Card,
   CardContent,
@@ -160,9 +161,9 @@ export default function Gallery() {
       ],
     },
     Ventilatieroosters: {
-      title: "Wat is Ventilatieroosters?",
+      title: "Wat zijn ventilatieroosters??",
       description:
-        "Dakisolatie is cruciaal voor een energiezuinig huis. Het voorkomt warmteverlies via het dak en zorgt voor een aangenaam binnenklimaat.",
+        "ventilatieroosters is cruciaal voor een energiezuinig huis. Het voorkomt warmteverlies via het dak en draagt bij aan een aangenaam binnenklimaat.",
       benefits: [
         "Maximale energiebesparing",
         "Bescherming tegen weersinvloeden",
@@ -170,15 +171,13 @@ export default function Gallery() {
       ],
       images: [
         {
-          src: Daki,
-          title: "Dak Voorbereiding",
-          description: "Zorgvuldige voorbereiding van het dak",
+          src: Vent1,
+          title: "Bescherming tegen lekkages",
+          description: "Verbeterde dakfunctionaliteit",
         },
       ],
     },
   };
-
-
 
   const activeContent = sections[activeSection];
 
