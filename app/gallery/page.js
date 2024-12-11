@@ -163,17 +163,14 @@ export default function Gallery() {
     Ventilatieroosters: {
       title: "Wat zijn ventilatieroosters??",
       description:
-        "ventilatieroosters is cruciaal voor een energiezuinig huis. Het voorkomt warmteverlies via het dak en draagt bij aan een aangenaam binnenklimaat.",
+        "Ventilatieroosters in de kruipruimte,Ventilatieroosters zijn roosters die aan de onderkant van de buitenmuur zitten,Ventilatieroosters in de kruipruimte zorgen ervoor dat uw kruipruimte goed geventileerd wordt. Hierdoor kan het vocht de ruimte verlaten,Hierdoor kan het vocht de ruimte verlaten,Waardoor er minder kans is op schimmel en geuren uit de kruipruimte",
       benefits: [
-        "Maximale energiebesparing",
-        "Bescherming tegen weersinvloeden",
-        "Verbeterd binnenklimaat",
       ],
       images: [
         {
           src: Vent1,
-          title: "Bescherming tegen lekkages",
-          description: "Verbeterde dakfunctionaliteit",
+          title: "Ventilatieroosters zijn niet altijd nodig, maar wel raadzaam",
+          description: "Een rooster zorgt voor een natuurlijke afvoer van vocht waardoor het klimaat binnen een ruimte aangenaam blijft, Het komt regelmatig voor dat woningen een hoog vochtpercentage hebben, Dat kan bijvoorbeeld door te douchen, de regen of een niet goed geventileerde kruipruimte, Doordat het vocht zich in de woning verspreidt, maar niet weg kan trekt dit in de muren, Hierdoor kunnen vochtproblemen zoals schimmel ontstaan, wat erg onaangenaam en ongezond is, Kort de ramen open zetten lost dit probleem helaas niet altijd op, Door te zorgen dat er ventilatieroosters in de ramen zitten kan het vocht naar buiten worden gedreven, Dit kunt u eventueel via de lokale aannemer of glaszetter regelen, Ook een mechanische afzuiger gaan ervoor zorgen dat het vocht in de woning beter gereguleerd wordt, Dit zorgt voor een betere luchtkwaliteit in de woning,",
         },
       ],
     },
@@ -212,7 +209,7 @@ export default function Gallery() {
               {activeContent.description}
             </p>
 
-            <h3 className="text-lg font-semibold mb-3 text-white">Voordelen</h3>
+            <h3 className="text-lg font-semibold mb-3 text-white"></h3>
             <ul className="list-disc list-inside space-y-2 mb-6">
               {activeContent.benefits.map((benefit, index) => (
                 <li key={index} className="text-sm text-white">
