@@ -161,16 +161,16 @@ export default function Gallery() {
       ],
     },
     Ventilatieroosters: {
-      title: "Wat zijn ventilatieroosters??",
+      title: "Ventilatieroosters in de kruipruimte",
       description:
-        "Ventilatieroosters in de kruipruimte,Ventilatieroosters zijn roosters die aan de onderkant van de buitenmuur zitten,Ventilatieroosters in de kruipruimte zorgen ervoor dat uw kruipruimte goed geventileerd wordt. Hierdoor kan het vocht de ruimte verlaten,Hierdoor kan het vocht de ruimte verlaten,Waardoor er minder kans is op schimmel en geuren uit de kruipruimte",
-      benefits: [
-      ],
+        "Ventilatieroosters zijn roosters die aan de onderkant van de buitenmuur zitten,Ventilatieroosters in de kruipruimte zorgen ervoor dat uw kruipruimte goed geventileerd wordt. Hierdoor kan het vocht de ruimte verlaten,Hierdoor kan het vocht de ruimte verlaten,Waardoor er minder kans is op schimmel en geuren uit de kruipruimte",
+      benefits: [],
       images: [
         {
           src: Vent1,
           title: "Ventilatieroosters zijn niet altijd nodig, maar wel raadzaam",
-          description: "Een rooster zorgt voor een natuurlijke afvoer van vocht waardoor het klimaat binnen een ruimte aangenaam blijft, Het komt regelmatig voor dat woningen een hoog vochtpercentage hebben, Dat kan bijvoorbeeld door te douchen, de regen of een niet goed geventileerde kruipruimte, Doordat het vocht zich in de woning verspreidt, maar niet weg kan trekt dit in de muren, Hierdoor kunnen vochtproblemen zoals schimmel ontstaan, wat erg onaangenaam en ongezond is, Kort de ramen open zetten lost dit probleem helaas niet altijd op, Door te zorgen dat er ventilatieroosters in de ramen zitten kan het vocht naar buiten worden gedreven, Dit kunt u eventueel via de lokale aannemer of glaszetter regelen, Ook een mechanische afzuiger gaan ervoor zorgen dat het vocht in de woning beter gereguleerd wordt, Dit zorgt voor een betere luchtkwaliteit in de woning,",
+          description:
+            "Een rooster zorgt voor een natuurlijke afvoer van vocht waardoor het klimaat binnen een ruimte aangenaam blijft, Het komt regelmatig voor dat woningen een hoog vochtpercentage hebben, Dat kan bijvoorbeeld door te douchen, de regen of een niet goed geventileerde kruipruimte, Doordat het vocht zich in de woning verspreidt, maar niet weg kan trekt dit in de muren, Hierdoor kunnen vochtproblemen zoals schimmel ontstaan, wat erg onaangenaam en ongezond is, Kort de ramen open zetten lost dit probleem helaas niet altijd op, Door te zorgen dat er ventilatieroosters in de ramen zitten kan het vocht naar buiten worden gedreven, Dit kunt u eventueel via de lokale aannemer of glaszetter regelen, Ook een mechanische afzuiger gaan ervoor zorgen dat het vocht in de woning beter gereguleerd wordt, Dit zorgt voor een betere luchtkwaliteit in de woning",
         },
       ],
     },
