@@ -7,6 +7,7 @@ import PIFPRO from "@/public/PIFPRO-1-1024x328.webp";
 import LogoWeb from "@/public/vca-logo-web.webp";
 import Logo2 from "@/public/LOGO2.jpg";
 import Image from "next/image";
+import Head from "next/head";
 
 export const metadata = {
   metadataBase: new URL("https://www.prof-solutions.nl"),
@@ -74,9 +75,9 @@ export const metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   manifest: "/site.webmanifest",
 };
@@ -86,6 +87,11 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="nl">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+      </head>
       <body
         className="flex flex-col min-h-screen"
         style={{ backgroundColor: "#303642", color: "white" }}
