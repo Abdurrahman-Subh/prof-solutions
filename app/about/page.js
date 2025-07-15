@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-        Over Prof-Solutions
+        Over IsoXpert
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
@@ -13,7 +13,7 @@ export default function About() {
             Onze Geschiedenis
           </h2>
           <p className="text-sm mb-4">
-            Prof-Solutions werd opgericht met een duidelijke missie: het leveren
+            IsoXpert werd opgericht met een duidelijke missie: het leveren
             van innovatieve en effectieve isolatieoplossingen voor woningen in
             Nederland. Sinds onze oprichting hebben we ons ontwikkeld tot een
             toonaangevende speler in de isolatie-industrie.

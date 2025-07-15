@@ -21,10 +21,10 @@ export default function Contact() {
           </p>
           <p className="text-sm flex items-center mb-4">
             <Mail size={16} className="mr-2" />
-            info@prof-solutions.nl
+            info@isoxpert.nl
           </p>
           <Link
-            href="mailto:info@prof-solutions.nl"
+            href="mailto:info@isoxpert.nl"
             className="bg-[#00a79d] text-white px-4 py-2 rounded text-sm inline-flex items-center hover:bg-[#008c82]"
           >
             <Mail size={16} className="mr-2" />

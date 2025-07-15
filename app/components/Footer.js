@@ -15,21 +15,21 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="  border-t border-[#00a79d] bg-[#303642] text-white py-12">
+    <footer className="border-t border-gray-200/50 bg-gradient-to-br from-slate-50/95 to-gray-100/95 backdrop-blur-sm text-gray-800 py-12 shadow-inner">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-3">
               <Image
-                src="/logo.png"
-                alt="Prof-Solutions Logo"
-                width={40}
-                height={40}
-                className="rounded-full"
+                src="/NewLogo.png"
+                alt="IsoXpert Logo"
+                width={64}
+                height={64}
+                className="rounded-full shadow-lg ring-2 ring-white/50 transition-transform hover:scale-105"
               />
-              <span className="text-xl font-bold">Prof-Solutions</span>
+              <span className="text-2xl font-bold text-gray-800 tracking-tight"></span>
             </Link>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-gray-600">
               Innovatieve isolatieoplossingen voor uw woning. Wij zorgen voor
               comfort en energiebesparing.
             </p>
@@ -38,7 +38,7 @@ export default function Footer() {
                 href="https://tr.linkedin.com/in/maged-sakkar-532088204"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="text-gray-300 hover:text-[#00a79d] transition-colors"
+                className="text-gray-600 hover:text-[#00a79d] transition-colors"
               >
                 <LinkedIn size={20} />
               </Link>
@@ -57,7 +57,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="flex items-center text-gray-300 hover:text-[#00a79d] transition-colors"
+                    className="flex items-center text-gray-700 hover:text-[#00a79d] transition-colors"
                   >
                     <link.icon size={16} className="mr-2" />
                     <span>{link.label}</span>
@@ -80,7 +80,7 @@ export default function Footer() {
                 <li key={service}>
                   <Link
                     href="/services"
-                    className="text-gray-300 hover:text-[#00a79d] transition-colors"
+                    className="text-gray-700 hover:text-[#00a79d] transition-colors"
                   >
                     {service}
                   </Link>
@@ -97,7 +97,7 @@ export default function Footer() {
                   size={18}
                   className="mr-2 mt-1 flex-shrink-0 text-[#00a79d]"
                 />
-                <span className="text-gray-300">
+                <span className="text-gray-700">
                   Waterhoen 5 1399KG Muiderberg
                 </span>
               </li>
@@ -108,7 +108,7 @@ export default function Footer() {
                 />
                 <a
                   href="tel:+31648444885"
-                  className="text-gray-300 hover:text-[#00a79d] transition-colors"
+                  className="text-gray-700 hover:text-[#00a79d] transition-colors"
                 >
                   +31 6 48444885
                 </a>
@@ -116,10 +116,10 @@ export default function Footer() {
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 flex-shrink-0 text-[#00a79d]" />
                 <a
-                  href="mailto:info@prof-solutions.nl"
-                  className="text-gray-300 hover:text-[#00a79d] transition-colors"
+                  href="mailto:info@isoxpert.nl"
+                  className="text-gray-700 hover:text-[#00a79d] transition-colors"
                 >
-                  info@prof-solutions.nl
+                  info@isoxpert.nl
                 </a>
               </li>
             </ul>
@@ -128,8 +128,8 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-400">
-              © {currentYear} Prof-Solutions & Maged Sakkar . Alle rechten
+            <p className="text-sm text-gray-500">
+              © {currentYear} IsoXpert & Maged Sakkar . Alle rechten
               voorbehouden.
             </p>
           </div>

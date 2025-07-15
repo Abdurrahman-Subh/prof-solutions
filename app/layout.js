@@ -12,10 +12,10 @@ import Head from "next/head";
 export const metadata = {
   metadataBase: new URL("https://www.prof-solutions.nl"),
   title: {
-    default: "Prof-Solutions |Innovatieve isolatieoplossingen voor uw woning",
+    default: "IsoXpert | Innovatieve isolatieoplossingen voor uw woning",
   },
   description:
-    "Prof-Solutions biedt hoogwaardige isolatiediensten voor uw woning. Ontdek onze innovatieve oplossingen voor dak-, muur-, vloer- en glasisolatie.",
+    "IsoXpert biedt hoogwaardige isolatiediensten voor uw woning. Ontdek onze innovatieve oplossingen voor dak-, muur-, vloer- en glasisolatie.",
   keywords: [
     "isolatie",
     "energiebesparing",
@@ -25,31 +25,31 @@ export const metadata = {
     "Dakisolatie",
     "duurzaam wonen",
     "Nederland",
-    "Prof-Solutions",
+    "IsoXpert",
     "Spouwisolatie",
     "Bodemisolatie",
     "Vloerisolatie",
   ],
-  authors: [{ name: "Prof-Solutions" }],
-  creator: "Prof-Solutions",
-  publisher: "Prof-Solutions",
+  authors: [{ name: "IsoXpert" }],
+  creator: "IsoXpert",
+  publisher: "IsoXpert",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: "Prof-Solutions | Innovatieve isolatieoplossingen voor uw woning",
+    title: "IsoXpert | Innovatieve isolatieoplossingen voor uw woning",
     description:
-      "Ontdek hoe Prof-Solutions uw woning comfortabeler en energiezuiniger kan maken met onze geavanceerde isolatietechnieken.",
+      "Ontdek hoe IsoXpert uw woning comfortabeler en energiezuiniger kan maken met onze geavanceerde isolatietechnieken.",
     url: "https://www.prof-solutions.nl",
-    siteName: "Prof-Solutions",
+    siteName: "IsoXpert",
     images: [
       {
         url: "https://www.prof-solutions.nl/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Prof-Solutions - Innovatieve isolatieoplossingen voor uw woning",
+        alt: "IsoXpert - Innovatieve isolatieoplossingen voor uw woning",
       },
     ],
     locale: "nl_NL",
@@ -57,11 +57,11 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prof-Solutions | Innovatieve isolatieoplossingen voor uw woning",
+    title: "IsoXpert | Innovatieve isolatieoplossingen voor uw woning",
     description:
-      "Verbeter de energie-efficiëntie van uw woning met de geavanceerde isolatietechnieken van Prof-Solutions.",
+      "Verbeter de energie-efficiëntie van uw woning met de geavanceerde isolatietechnieken van IsoXpert.",
     images: ["https://www.prof-solutions.nl/twitter-image.jpg"],
-    creator: "@ProfSolutions",
+    creator: "@IsoXpert",
   },
   robots: {
     index: true,
@@ -75,9 +75,9 @@ export const metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/logo.png",
+    icon: "/NewLogo.png",
+    shortcut: "/NewLogo.png",
+    apple: "/NewLogo.png",
   },
   manifest: "/site.webmanifest",
 };
@@ -93,8 +93,7 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/logo.png" />
       </head>
       <body
-        className="flex flex-col min-h-screen"
-        style={{ backgroundColor: "#303642", color: "white" }}
+        className="flex flex-col min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-white text-gray-800"
       >
         <Header />
         <main className="flex-grow">

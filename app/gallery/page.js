@@ -179,67 +179,88 @@ export default function Gallery() {
   const activeContent = sections[activeSection];
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      {/* <h1 className="text-2xl font-bold mb-8">Isolatiemogelijkheden</h1> */}
-      <div className="grid grid-cols-1 md:grid-cols-[250px_1fr] gap-8">
-        {/* Left sidebar with buttons */}
-        <div className="space-y-2">
-          {Object.keys(sections).map((section) => (
-            <Button
-              key={section}
-              onClick={() => setActiveSection(section)}
-              className={`w-full justify-start text-left ${
-                activeSection === section
-                  ? "bg-[#00a79d] hover:bg-[#00a79d]/90"
-                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-              }`}
-            >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </Button>
-          ))}
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-white">
+      <div className="container mx-auto px-4 py-16">
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+            Isolatiemogelijkheden
+          </h1>
+          <div className="w-32 h-2 bg-gradient-to-r from-[#00a79d] to-emerald-500 mx-auto rounded-full mb-6"></div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Ontdek onze verschillende isolatieoplossingen voor uw woning
+          </p>
         </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-12">
+          {/* Left sidebar with buttons */}
+          <div className="space-y-3">
+            {Object.keys(sections).map((section) => (
+              <Button
+                key={section}
+                onClick={() => setActiveSection(section)}
+                className={`w-full justify-start text-left h-auto py-4 px-6 rounded-2xl transition-all duration-300 ${
+                  activeSection === section
+                    ? "bg-gradient-to-r from-[#00a79d] to-emerald-500 text-white shadow-lg scale-105 border-2 border-[#00a79d]"
+                    : "bg-white/50 backdrop-blur-sm text-gray-700 hover:bg-white/70 border-2 border-white/20 hover:border-[#00a79d]/30"
+                }`}
+              >
+                <span className="text-sm font-medium">
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </span>
+              </Button>
+            ))}
+          </div>
 
-        {/* Right content area */}
-        <div className="space-y-8">
-          <div className="rounded-lg p-6 shadow-sm">
-            <h2 className="text-xl font-bold mb-4 text-white">
-              {activeContent.title}
-            </h2>
-            <p className="text-sm text-white mb-6">
-              {activeContent.description}
-            </p>
+          {/* Right content area */}
+          <div className="space-y-8">
+            <div className="rounded-3xl p-8 shadow-2xl bg-gradient-to-br from-white/40 to-white/20 backdrop-blur-sm border border-white/20">
+              <h2 className="text-3xl font-bold mb-6 text-gray-800">
+                {activeContent.title}
+              </h2>
+              <p className="text-gray-700 mb-8 leading-relaxed text-lg">
+                {activeContent.description}
+              </p>
 
-            <h3 className="text-lg font-semibold mb-3 text-white"></h3>
-            <ul className="list-disc list-inside space-y-2 mb-6">
-              {activeContent.benefits.map((benefit, index) => (
-                <li key={index} className="text-sm text-white">
-                  {benefit}
-                </li>
-              ))}
-            </ul>
+              {activeContent.benefits.length > 0 && (
+                <div className="mb-8">
+                  <h3 className="text-xl font-semibold mb-4 text-gray-800">Voordelen:</h3>
+                  <ul className="space-y-3">
+                    {activeContent.benefits.map((benefit, index) => (
+                      <li key={index} className="text-gray-700 flex items-start">
+                        <div className="w-2 h-2 bg-gradient-to-r from-[#00a79d] to-emerald-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span>{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {activeContent.images.map((image, index) => (
-                <Card key={index} className="overflow-hidden">
-                  <CardContent className="p-0">
-                    <Image
-                      src={image.src}
-                      alt={image.title}
-                      width={300}
-                      height={200}
-                      className="w-full h-48 object-cover"
-                    />
-                  </CardContent>
-                  <CardHeader className="p-4">
-                    <CardTitle className="text-sm font-semibold text-white">
-                      {image.title}
-                    </CardTitle>
-                    <CardDescription className="text-xs text-white">
-                      {image.description}
-                    </CardDescription>
-                  </CardHeader>
-                </Card>
-              ))}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {activeContent.images.map((image, index) => (
+                  <Card key={index} className="overflow-hidden rounded-2xl border-0 shadow-lg bg-white/60 backdrop-blur-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <CardContent className="p-0">
+                      <div className="relative h-48 overflow-hidden">
+                        <Image
+                          src={image.src}
+                          alt={image.title}
+                          width={300}
+                          height={200}
+                          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                      </div>
+                    </CardContent>
+                    <CardHeader className="p-4">
+                      <CardTitle className="text-base font-semibold text-gray-800 mb-2">
+                        {image.title}
+                      </CardTitle>
+                      <CardDescription className="text-sm text-gray-600">
+                        {image.description}
+                      </CardDescription>
+                    </CardHeader>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </div>
