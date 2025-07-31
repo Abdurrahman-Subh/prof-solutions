@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Logo from "@/public/NewLogo.png";
 import { motion } from "framer-motion";
-import { Briefcase, Home, ImageIcon, Mail, Menu, Users } from "lucide-react";
+import { Briefcase, Home, ImageIcon, Mail, Menu, Users, MessageSquare } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -15,6 +15,7 @@ const navItems = [
   { href: "/services", label: "Diensten", icon: Briefcase },
   { href: "/about", label: "Over ons", icon: Users },
   { href: "/contact", label: "Contact", icon: Mail },
+  { href: "/faq", label: "FAQ", icon: MessageSquare },
 ];
 
 export default function Header() {
@@ -23,20 +24,20 @@ export default function Header() {
 
   return (
     <header className="bg-gradient-to-r from-slate-50/95 to-gray-50/95 backdrop-blur-sm text-gray-800 sticky top-0 z-50 shadow-lg border-b border-gray-200/50">
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto px-4 py-4 sm:py-6">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-center space-x-4">
+          <Link href="/" className="flex items-center space-x-2 sm:space-x-4">
             <Image
               src={Logo}
-              width={80}
-              height={80}
+              width={60}
+              height={60}
               alt="IsoXpert"
-              className="rounded-full shadow-lg ring-2 ring-white/50 transition-transform hover:scale-105"
+              className="rounded-full shadow-lg ring-2 ring-white/50 transition-transform hover:scale-105 sm:w-16 sm:h-16"
             />
-            <span className="text-3xl font-bold text-gray-800 tracking-tight"></span>
+            <span className="text-xl sm:text-3xl font-bold text-gray-800 tracking-tight"></span>
           </Link>
 
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-4 lg:space-x-8">
             {navItems.map((item) => (
               <NavItem key={item.href} {...item} pathname={pathname} />
             ))}
@@ -51,9 +52,9 @@ export default function Header() {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-[300px] sm:w-[400px] bg-[#303642]"
+              className="w-[300px] sm:w-[400px] bg-gradient-to-r from-slate-50/95 to-gray-50/95 backdrop-blur-sm"
             >
-              <nav className="flex flex-col space-y-4 mt-8">
+              <nav className="flex flex-col space-y-3 mt-6">
                 {navItems.map((item) => (
                   <MobileNavItem
                     key={item.href}
@@ -103,8 +104,8 @@ function MobileNavItem({ href, label, icon: Icon, pathname, setIsOpen }) {
   return (
     <Link
       href={href}
-      className={`flex items-center space-x-2 text-lg font-medium p-2 rounded-lg transition-colors ${
-        isActive ? "bg-[#00a79d] text-white" : "text-gray-700 hover:bg-[#00a79d]/10"
+      className={`flex items-center space-x-3 text-base sm:text-lg font-medium p-3 rounded-lg transition-colors ${
+        isActive ? "bg-[#00a79d] text-white" : "text-gray-700 hover:bg-gray-100"
       }`}
       onClick={() => setIsOpen(false)}
     >

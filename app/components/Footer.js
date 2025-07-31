@@ -98,7 +98,7 @@ export default function Footer() {
                   className="mr-2 mt-1 flex-shrink-0 text-[#00a79d]"
                 />
                 <span className="text-gray-700">
-                  Waterhoen 5 1399KG Muiderberg
+                  De Berken 53<br/>1402KP Bussum
                 </span>
               </li>
               <li className="flex items-center">
@@ -107,10 +107,10 @@ export default function Footer() {
                   className="mr-2 flex-shrink-0 text-[#00a79d]"
                 />
                 <a
-                  href="tel:+31648444885"
+                  href="tel:+31638506541"
                   className="text-gray-700 hover:text-[#00a79d] transition-colors"
                 >
-                  +31 6 48444885
+                  +31 6 38506541
                 </a>
               </li>
               <li className="flex items-center">

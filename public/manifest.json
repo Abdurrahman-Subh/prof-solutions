@@ -1,0 +1,29 @@
+{
+  "name": "IsoXpert - Isolatie Oplossingen",
+  "short_name": "IsoXpert",
+  "description": "Professionele isolatiediensten voor uw woning. Dak-, spouw-, vloer- en bodemisolatie.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00a79d",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/NewLogo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/NewLogo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "utilities", "productivity"],
+  "lang": "nl",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}

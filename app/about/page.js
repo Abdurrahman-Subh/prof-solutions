@@ -42,14 +42,14 @@ export default function About() {
         <h2 className="text-xl font-semibold mb-4">Onze Locaties</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="bg-[#00a79d] p-4 rounded-lg">
-            <h3 className="text-lg font-semibold mb-2">Muiderberg</h3>
+            <h3 className="text-lg font-semibold mb-2">Bussum</h3>
             <p className="text-sm flex items-center">
               <MapPin size={16} className="mr-2" />
-              Waterhoen 5, 1399KG Muiderberg
+              De Berken 53, 1402KP Bussum
             </p>
             <p className="text-sm flex items-center">
               <Phone size={16} className="mr-2" />
-              +31 6 48444885
+              +31 6 38506541
             </p>
           </div>
         </div>

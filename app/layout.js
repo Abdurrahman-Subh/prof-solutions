@@ -2,6 +2,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./globals.css";
 import WhatsAppButton from "./components/WhatsAppButton";
+import StructuredData from "./components/StructuredData";
+import LoadingScreen from "./components/LoadingScreen";
 import INSULA from "@/public/INSULA-1.webp";
 import PIFPRO from "@/public/PIFPRO-1-1024x328.webp";
 import LogoWeb from "@/public/vca-logo-web.webp";
@@ -79,7 +81,7 @@ export const metadata = {
     shortcut: "/NewLogo.png",
     apple: "/NewLogo.png",
   },
-  manifest: "/site.webmanifest",
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({ children }) {
@@ -95,6 +97,8 @@ export default function RootLayout({ children }) {
       <body
         className="flex flex-col min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-white text-gray-800"
       >
+        <LoadingScreen />
+        <StructuredData />
         <Header />
         <main className="flex-grow">
           {children}

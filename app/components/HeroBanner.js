@@ -9,8 +9,8 @@ export default function HeroBanner() {
       <Image
         src={Hero}
         alt="IsoXpert Hero Image"
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{ objectFit: 'cover' }}
         className="absolute z-0"
         priority
       />
