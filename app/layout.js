@@ -90,9 +90,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="nl">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/logo.png" />
+        <link rel="icon" href="/NewLogo.png" />
+        <link rel="shortcut icon" href="/NewLogo.png" />
+        <link rel="apple-touch-icon" href="/NewLogo.png" />
       </head>
       <body
         className="flex flex-col min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-white text-gray-800"

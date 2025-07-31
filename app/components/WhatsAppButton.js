@@ -4,7 +4,7 @@ import { PhoneIcon as WhatsApp } from "lucide-react";
 import { motion } from "framer-motion";
 
 const WhatsAppButton = () => {
-  const phoneNumber = "+31648444885";
+  const phoneNumber = "+31638506541";
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
   return (
